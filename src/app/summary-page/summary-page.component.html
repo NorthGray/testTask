@@ -1,0 +1,79 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Welcome</h5>
+          <p class="card-text">
+            With supporting text below as a natural lead-in to addtitional
+            content.
+          </p>
+          <a href="#" class="btn btn-primary">See transactions</a>
+        </div>
+        <div class="card-footer text-muted">
+          You have {{ transactionResponse.total }} transactions
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ countIncome }}</h5>
+          <p class="card-text">Income</p>
+          <a
+            routerLink="/navigator"
+            [queryParams]="{ tab: '0' }"
+            class="btn btn-primary"
+            >See all</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ countInvestments }}</h5>
+          <p class="card-text">Investments</p>
+          <a
+            routerLink="/navigator"
+            [queryParams]="{ tab: '3' }"
+            class="btn btn-primary"
+            >See all</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ countOutcome }}</h5>
+          <p class="card-text">Outcome</p>
+          <a
+            routerLink="/navigator"
+            [queryParams]="{ tab: '1' }"
+            class="btn btn-primary"
+            >See all</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ countLoans }}</h5>
+          <p class="card-text">Loans</p>
+          <a
+            routerLink="/navigator"
+            [queryParams]="{ tab: '2' }"
+            class="btn btn-primary"
+            >See all</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
